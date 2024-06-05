@@ -28,7 +28,7 @@
         "blue", 
         "green"
       ],
-      "title": "Basic Starter Pack",
+      "title": "Residential Pack",
       "price": 399,
       "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
       "full_description": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out.",
@@ -129,24 +129,12 @@
     },
     {
       "id": "03",
-      "thumb_src": "/images/suit-2.jpg",
+      "thumb_src": "/images/residential.jpg",
       "thumb_alt": "iMac-image",
-      "images": [
+      "image": [
         {
-          "src": "https://images.unsplash.com/photo-1567790350645-dbc1486a89c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+          "src": "/images/residential.jpg",
           "alt": "first_image"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1593088177922-aa1c5055c7b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "second_image"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1635594202056-9ea3b497e5c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "third_image"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1593085260707-5377ba37f868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "fourth_image"
         }
       ],
       "color": "Yellow",
@@ -191,39 +179,60 @@
   ],
   "categories": [
     {
-      "thumb_src": "/images/category1.jpg",
-      "title": "Silk Dresses",
-      "collection": "Pre-fall"
+      "thumb_src": "/images/residential.jpg",
+      "title": "100 -1000 MEGA",
+      "collection": "Residential"
     },
     {
-      "thumb_src": "/images/category2.jpg",
-      "title": "Suits",
-      "collection": "Designers"
+      "thumb_src": "/images/corporate.jpg",
+      "title": "100 -1000 MEGA",
+      "collection": "Corporate"
     },
     {
-      "thumb_src": "/images/category3.jpg",
-      "title": "Festival",
-      "collection": "Summer"
+      "thumb_src": "/images/Hardware.jpg",
+      "title": "TENDA Systems",
+      "collection": "Hardware"
+    }
+  ],
+  "packs" : [
+    {
+      "thumb_src": "/images/residential.jpg",
+      "title": "Fibre 100 MEGA",
+      "price" : "₪129",
+      "description" : [
+        "Unlimited Download",
+        "Download speed 100 Mb",
+        "Upload speed 10 Mb",
+        "Free Installation Fees",
+        "Field support team",
+        "12 Month Commitment"
+      ]
     },
     {
-      "thumb_src": "/images/category4.jpg",
-      "title": "Showroom",
-      "collection": "Sale"
+      "thumb_src": "/images/residential.jpg",
+      "title": "Fibre 500 MEGA",
+      "price" : "₪ 139",
+      "description" : [
+        "Unlimited Download",
+        "Download speed 500 Mb",
+        "Upload speed 50 Mb",
+        "Free Installation Fees",
+        "Field support team",
+        "12 Month Commitment"
+      ]
     },
     {
-      "thumb_src": "/images/product10.jpg",
-      "title": "Living Sofas",
-      "collection": "Interior Design"
-    },
-    {
-      "thumb_src": "/images/category5.jpg",
-      "title": "Chairs by Designers",
-      "collection": "Sale"
-    },
-    {
-      "thumb_src": "/images/product9.jpg",
-      "title": "Home care",
-      "collection": "Products"
+      "thumb_src": "/images/residential.jpg",
+      "title": "Fibre 1000 MEGA",
+      "price" : "₪ 159",
+      "description" : [
+        "Unlimited Download",
+        "Download speed 1000 Mb",
+        "Upload speed 50 Mb",
+        "Free Installation Fees",
+        "Field support team",
+        "12 Month Commitment"
+      ]
     }
   ],
   "reviews": [

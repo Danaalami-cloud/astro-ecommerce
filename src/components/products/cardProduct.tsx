@@ -56,7 +56,7 @@ export default function CardProduct({
             }
 
             {!(description || colors || color) &&
-              <a href="#" className="font-weight-normal text-body text-sm">Shop Now</a>
+              <a href="/astro-ecommerce/residentialProduct" className="font-weight-normal text-body text-sm">Shop Now</a>
             }
           </div>
         </a>

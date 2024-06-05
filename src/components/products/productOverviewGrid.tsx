@@ -31,13 +31,19 @@ export default function ProductOverview({
   sizes
 }: Props) {
 
+  const firstImage = images && images.length > 0 ? images[0] : null;
   return (
     <>
     <div className="card card-product card-plain">
       <div className="row">
-        {(images.length != 0) && 
-          <ProductGallery images={images}/>
+        {/* {(images.length != 0) &&  */}
+        {firstImage && 
+        <div className='col-12 col-lg-6'>
+          <img src={firstImage.src} alt={firstImage.alt} className="img-fluid" />
+          </div>
         }
+           {/* <ProductGallery images={images}/> */}
+        {/* } */}
         <div className="col-12 col-lg-6 ps-lg-5">
           {(title.length != 0) && 
             <h2 className="mt-4">{title}</h2>
@@ -47,12 +53,12 @@ export default function ProductOverview({
           }
 
           <form action="" method="post">
-            {(price.length != 0) && 
+            {/* {(price.length != 0) &&  */}
               <div className="d-flex">
                 <h3 className="font-weight-normal">${price.toLocaleString()}</h3>
                 <input className="opacity-0" defaultValue={price} />
               </div>
-            }
+            {/* } */}
 
             {(rating != 0) && 
             <>
@@ -64,15 +70,15 @@ export default function ProductOverview({
             </>
             }
             
-            {(sizes.size != 0) && 
+            {/* {(sizes.size != 0) && 
               <ProductSizes sizes={sizes}/>
-            }
+            } */}
             <button className="btn btn-dark btn-lg" type="submit">Add to cart</button>
           </form>
         </div>
       </div>
       
-      <div className="row mt-5">
+      {/* <div className="row mt-5">
         <div className="col-12 col-lg-6">
           <h4>Product Description</h4>
           <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
@@ -93,7 +99,7 @@ export default function ProductOverview({
             </>
            }
         </div>
-      </div>
+      </div> */}
     </div>
     </>
   );

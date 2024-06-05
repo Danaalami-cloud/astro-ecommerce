@@ -1,7 +1,7 @@
 .card {
   &.card-background {
     align-items: $card-bg-align-items;
-
+    
     .full-background {
       background-position: $card-full-bg-bg-position;
       background-size: $card-full-bg-bg-size;
@@ -85,3 +85,4 @@
     }
   }
 }
+

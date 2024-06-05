@@ -4,7 +4,13 @@
   box-shadow: $blur-box-shadow;
   -webkit-backdrop-filter: $blur-backdrop-filter;
   backdrop-filter: $blur-backdrop-filter;
-  background-color: $blur-background-color !important;
+  // background-color: $blur-background-color !important;
+
+  background: linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
 
   &.saturation-less {
     -webkit-backdrop-filter: $blur-backdrop-filter-less;
@@ -34,7 +40,7 @@
 .navbar-blur {
   -webkit-backdrop-filter: $blur-backdrop-filter;
   backdrop-filter: $blur-backdrop-filter;
-  background-color: rgba($white, .58) !important;
+  background-color: rgba($white, 0.58) !important;
 }
 
 .blur-section {
@@ -42,7 +48,11 @@
   backdrop-filter: $blur-backdrop-filter;
 
   &.blur-gradient-primary {
-    @include gradient-directional(rgba($primary-gradient, .95) 0%, rgba($primary-gradient-state, .95) 100%, $deg: 310deg);
+    @include gradient-directional(
+      rgba($primary-gradient, 0.95) 0%,
+      rgba($primary-gradient-state, 0.95) 100%,
+      $deg: 310deg
+    );
   }
 }
 
@@ -162,14 +172,13 @@ hr.horizontal {
   border-top-left-radius: 0;
 }
 
-.border-dashed{
+.border-dashed {
   border-style: dashed !important;
 }
 
 .z-index-sticky {
   z-index: $zindex-sticky;
 }
-
 
 // moving waves animation
 .waves {
@@ -274,9 +283,8 @@ hr.horizontal {
   }
 }
 
-
 // Background Sizes
-.bg-cover{
+.bg-cover {
   background-size: cover;
 }
 
@@ -306,15 +314,14 @@ hr.horizontal {
   opacity: $mask-opacity;
 }
 
-
 // Cursor Pointer Class
 .cursor-pointer {
   cursor: pointer;
 }
 
 // Translate 50% Class
-.transform-translate-50{
-  transform: translate(0,-50%)
+.transform-translate-50 {
+  transform: translate(0, -50%);
 }
 
 // VR Pages
@@ -334,8 +341,57 @@ hr.horizontal {
   }
 }
 
-.bg-black {
-  background-color: $black;
+.particles-j {
+  // background-color: $black;
+  body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    display: contents;
+    vertical-align: bottom;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* ---- stats.js ---- */
+  .count-particles {
+    background: #4a4ab4;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
 }
 
 // Faded bottom backdrop
@@ -345,7 +401,13 @@ hr.horizontal {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.97) 80%) repeat scroll 0 0;
+  background: rgba(255, 255, 255, 0)
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.97) 80%
+    )
+    repeat scroll 0 0;
 }
 
 // Text with border
@@ -360,11 +422,11 @@ hr.horizontal {
     vertical-align: $text-border-vertical-align;
   }
 
-  &:after{
+  &:after {
     background: $text-border-bg-color-after;
   }
 
-  &:before{
+  &:before {
     background: $text-border-bg-color-before;
   }
 
@@ -379,7 +441,7 @@ hr.horizontal {
   }
 }
 
-// Checkboxes in Accordion 
+// Checkboxes in Accordion
 .accordion {
   .form-check-input {
     margin-left: 0;

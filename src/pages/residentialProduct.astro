@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/navbar';
+import data from '../../public/data.json';
+import '../../assets/scss/astro-ecommerce.scss';
+import Footer from '../components/footer';
+import ProductOverviewGrid from '../components/products/productOverviewGrid';
+import CardProduct from '../components/products/cardCategory';
+import CardCategory from '../components/products/cardCategory';
+import ResidentialCategory from '../components/products/residentialCategory';
+---
+
+<Layout title="Residential Product">
+<Navbar />
+<div class="container mt-5">
+    <ProductOverviewGrid  
+      colors={data.products[0].colors}
+      title={data.products[0].title}
+      full_description={data.products[0].full_description}
+      price={data.products[0].price}
+      highlights={data.products[0].highlights}
+      details={data.products[0].details}
+      rating={data.products[0].rating}
+      reviews={data.products[0].reviews}
+      sizes={data.products[0].sizes}
+    />    
+</div>
+<div class="residential-pack__container">
+
+    {data.packs.slice(0, 3).map(pack => 
+    // <div class="residential-pack__container">
+        <ResidentialCategory
+          thumb_src={pack.thumb_src}
+          title={pack.title} 
+          price= {pack.price}
+          description={pack.description}
+        />
+    // </div>
+    )}
+        </div>
+      )
+</div>
+<!-- <ProductOverviewGallery /> -->
+<Footer />
+
+</Layout>
